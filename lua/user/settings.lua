@@ -30,4 +30,18 @@ settings["diagnostics_virtual_text"] = false
 ---@type "Error"|"Warning"|"Information"|"Hint"
 settings["diagnostics_level"] = "Hint"
 
+-- Set the language servers that will be installed during bootstrap here.
+-- check the below link for all the supported LSPs:
+-- https://github.com/neovim/nvim-lspconfig/tree/master/lua/lspconfig/server_configurations
+---@type string[]
+settings["lsp_deps"] = {
+	"bashls",
+	"clangd",
+	"html",
+	"jsonls",
+	"lua_ls",
+	"pylsp",
+	-- "gopls",
+}
+
 return settings
