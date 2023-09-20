@@ -4,7 +4,10 @@ local settings = {}
 -- Examples
 settings["use_ssh"] = true
 
-settings["colorscheme"] = "catppuccin"
+-- Set the colorscheme to use here.
+-- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`.
+---@type string
+settings["colorscheme"] = "catppuccin-mocha"
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
@@ -16,7 +19,7 @@ settings["format_notify"] = false
 
 -- Set it to false if you don't use copilot
 ---@type boolean
-settings["use_copilot"] = false
+settings["use_copilot"] = true
 
 -- Set it to false if diagnostics virtual text is annoying.
 -- If disabled, you may browse lsp diagnostics using trouble.nvim (press `gt` to toggle it).
