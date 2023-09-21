@@ -7,7 +7,7 @@ settings["use_ssh"] = true
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`.
 ---@type string
-settings["colorscheme"] = "catppuccin-macchiato"
+settings["colorscheme"] = "catppuccin"
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
