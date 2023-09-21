@@ -5,6 +5,7 @@ return vim.schedule_wrap(function()
 	vim.api.nvim_set_option_value("foldexpr", "nvim_treesitter#foldexpr()", {})
 
 	require("modules.utils").load_plugin("nvim-treesitter", {
+        -- 解决自动换行缩进 https://stackoverflow.com/questions/71974087/neovim-auto-indentation-nuances
         indent = { enable = true },
 		ensure_installed = require("core.settings").treesitter_deps,
 		highlight = {
