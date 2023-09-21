@@ -1,6 +1,7 @@
 local options = {
     -- Example
-    autoindent = true,
+    -- autoindent = true,
+    wrap = true,
     mouse = "", -- 禁用鼠标
 }
 

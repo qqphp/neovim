@@ -7,7 +7,7 @@ settings["use_ssh"] = true
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`.
 ---@type string
-settings["colorscheme"] = "catppuccin-mocha"
+settings["colorscheme"] = "catppuccin-macchiato"
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
@@ -31,7 +31,7 @@ settings["diagnostics_virtual_text"] = false
 --  > e.g. if you set this option to `Warning`, only lsp warnings and errors will be shown.
 -- NOTE: This entry only works when `diagnostics_virtual_text` is true.
 ---@type "Error"|"Warning"|"Information"|"Hint"
-settings["diagnostics_level"] = "Hint"
+settings["diagnostics_level"] = "Error"
 
 -- Set the language servers that will be installed during bootstrap here.
 -- check the below link for all the supported LSPs:
@@ -43,8 +43,37 @@ settings["lsp_deps"] = {
 	"html",
 	"jsonls",
 	"lua_ls",
-	"pylsp",
+	-- "pylsp",
+    -- "intelephense",
 	-- "gopls",
+}
+
+-- Set the Treesitter parsers that will be installed during bootstrap here.
+-- Check the below link for all supported languages:
+-- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
+---@type string[]
+settings["treesitter_deps"] = {
+	"bash",
+	"c",
+	"cpp",
+	"css",
+	"go",
+	"gomod",
+	"html",
+	"javascript",
+	"json",
+	"latex",
+	"lua",
+	"make",
+	"markdown",
+	"markdown_inline",
+	"python",
+	"rust",
+	"typescript",
+	"vimdoc",
+	"vue",
+	"yaml",
+	"php",
 }
 
 return settings
