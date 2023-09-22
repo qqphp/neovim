@@ -7,7 +7,7 @@ settings["use_ssh"] = true
 -- Set the colorscheme to use here.
 -- Available values are: `catppuccin`, `catppuccin-latte`, `catppucin-mocha`, `catppuccin-frappe`, `catppuccin-macchiato`.
 ---@type string
-settings["colorscheme"] = "catppuccin"
+settings["colorscheme"] = "catppuccin-mocha"
 
 -- Set it to false if there are no need to format on save.
 ---@type boolean
@@ -74,6 +74,7 @@ settings["treesitter_deps"] = {
 	"vue",
 	"yaml",
 	"php",
+	"sql",
 }
 
 return settings
